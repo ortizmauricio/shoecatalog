@@ -1,5 +1,5 @@
 # Shoe Catalog README
-This source code is a Python web application that can be installed using the instructions found below. The source code aims to create a web application that allows users to create, read, update, and write information on the page, regarding shoes brands and models, in an authorized and authenticated manner through the use of Flask, SQL Alchemy, and Bootstrap.
+This source code is a Python web application that can be installed using the instructions found below. The source code uses Flask, SQL Alchemy, and Bootstrap, to create a web application that allows users to create, read, update, and write information on the page, regarding shoe brands and models, in an authorized and authenticated manner. A simple API endpoint is also implemented.
 
 ## Requirements
 * Vagrant
@@ -22,3 +22,4 @@ This source code is a Python web application that can be installed using the ins
 * Any user on the application can view brands and shoe models
 * In order to add, update, or delete a brand/shoe model, one must login with an authentic Google account
 * Authenticated users can only update or delete their own data
+*An API endpoint can be found on "localhost:8000/catalog" (displays all shoe models)
