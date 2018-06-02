@@ -18,7 +18,7 @@ This source code is a Python web application that can be installed using the ins
 9. Now using any web browser type in "localhost:8000/" on the search bar.
 10. Explore the site and feel free to make your own additions
 
-##Additional Notes
+## Additional Notes:
 * Any user on the application can view brands and shoe models
 * In order to add, update, or delete a brand/shoe model, one must login with an authentic Google account
 * Authenticated users can only update or delete their own data
