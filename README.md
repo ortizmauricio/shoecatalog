@@ -1,5 +1,5 @@
 # Shoe Catalog README
-This source code is a Python web application that can be installed using the instructions found below. The source code aims to create a web application that allows users to create, read, update, and write information on the page, regarding shoes brands and models, in an authorized and authenticated manner.
+This source code is a Python web application that can be installed using the instructions found below. The source code aims to create a web application that allows users to create, read, update, and write information on the page, regarding shoes brands and models, in an authorized and authenticated manner through the use of Flask, SQL Alchemy, and Bootstrap.
 
 ## Requirements
 * Vagrant
