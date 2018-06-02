@@ -1,0 +1,85 @@
+<!DOCTYPE>
+
+<html>
+
+<head>
+	
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+</head>
+
+
+<!-- Navigation Bar, only contains title of page and login button-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="{{url_for('showBrands')}}">Shoe Catalog</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      
+    </ul>
+    <a href= "{{url_for('gdisconnect')}}"" class="btn btn-primary" role = "button">Logout</a>
+  </div>
+</nav>
+
+
+<body>
+	<br>
+	<div class="container">
+	  <div class="row">
+	  	<!-- Displays all brands that are currently in database -->
+	    <div class="col-3">
+	      <ul class="list-group">
+
+	      <li class="list-group-item list-group-item-dark">Brands</li>
+	      	{%for i in brands%}
+
+				<li class="list-group-item">
+					<a href="{{url_for('showModels', brand_id = i.id)}}">{{i.name}}</a>
+					
+					{%if(creator.id == i.user_id)%}
+					
+						(
+						<a href="{{url_for('editBrand', brand_id = i.id)}}">Edit</a>
+						|
+						<a href="{{url_for('deleteBrand', brand_id = i.id)}}">Delete</a>
+						)
+					{%endif%}
+				</li>
+
+
+			{%endfor%}
+		  
+		</ul>
+	    </div>
+
+	    <!--Main Message Content -->
+	    <div class="col-6">
+	      <div class="card" >
+		  <div class="card-body">
+		    <h5 class="card-title">Welcome to the Shoe Catalog!</h5>
+		    <p class="card-text">This site let's you add different shoe models, allowing others to know information about them, such as: color, retail price, and resell price, depending on the condition that they are in. Feel free to explore the different brands on the site.</p>
+		    <a href="{{url_for('newBrand')}}" class="btn btn-primary">Add Brand</a>
+		  </div>
+		</div>
+	    </div>
+
+	    <div class="col-2">
+	      
+	    </div>
+	  </div>
+	</div>
+</body>
+
+<!-- Bootstrap JS and jQuery -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+</html>
