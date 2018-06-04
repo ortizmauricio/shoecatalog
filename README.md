@@ -9,7 +9,7 @@ This source code is a Python web application that can be installed using the ins
 
 ## How to use:
 (Assuming you have installed the Requirements by their **default** settings...)
-1. Download all files from this repository from this repository.
+1. Download all files from this repository.
 2. Put all files into a new directory called 'vagrant' inside another directory. (ie "Downloads/shoecatalog/vagrant")
 4. Open Terminal and navigate to the previous directory
 5. Type "vagrant up" followed by "vagrant ssh"
