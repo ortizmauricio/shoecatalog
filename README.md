@@ -1,4 +1,10 @@
 # Shoe Catalog README
+
+This project is currently live at: http://18.191.240.195.xip.io/ .
+This project was deployed on an actual server. To see how this was done
+visit: https://github.com/ortizmauricio/LinuxServerConfiguration
+This repository contains instrucitons on how this project was created locally.
+
 This source code is a Python web application that can be installed using the instructions found below. The source code uses Flask, SQL Alchemy, and Bootstrap, to create a web application that allows users to create, read, update, and write information on the page, regarding shoe brands and models, in an authorized and authenticated manner. A simple API endpoint is also implemented.
 
 ## Requirements
